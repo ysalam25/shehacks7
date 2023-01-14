@@ -10,18 +10,23 @@
 <body>
     <div>
         <h1>e merge notes ..... </h1>
-        <form action='/'></form>
-        <div class = "btns">
-            <a href="/summary.html">
-            <button class = "btn">generate summary</button>
-            </a>
-            <a href="/missing.html">
-                <button class = "btn">get missing topics</button>
-            </a>
-            <a href="/compare.html">
-            <button class = "btn">compare notes</button>
-            </a>
-        </div>
+        <form method="post" enctype="multipart/form-data">
+            <div>
+              <label for="file">choose files to upload!</label>
+              <input type="file" id="file" name="file" multiple />
+            </div>
+            <div class = "btns">
+                <a href="/summary.html">
+                <button class = "btn">generate summary</button>
+                </a>
+                <a href="/missing.html">
+                    <button class = "btn">get missing topics</button>
+                </a>
+                <a href="/compare.html">
+                <button class = "btn">compare notes</button>
+                </a>
+            </div>
+          </form>
     </div>
 </body>
 </html>
